@@ -5,46 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xiaosen Chen | Algorithm Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .lang-zh { display: none; } /* 默认显示英文 */
+    </style>
 </head>
-<body class="bg-white text-slate-800 font-sans leading-relaxed">
-    <div class="max-w-3xl mx-auto px-6 py-16">
+<body class="bg-slate-50 text-slate-800 font-sans">
+    <div class="fixed top-6 right-6 z-50">
+        <button onclick="toggleLang()" class="bg-black text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg hover:scale-105 transition">
+            中文 / English
+        </button>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-6 py-16 bg-white shadow-sm min-h-screen">
         <header class="mb-12 border-b pb-8">
-            <h1 class="text-4xl font-bold text-black mb-2">Xiaosen Chen (陈潇森)</h1>
-            <p class="text-xl text-slate-600 mb-4">Video Recommendation Strategy Algorithm Engineer @ Baidu</p>
+            <h1 class="text-4xl font-bold text-black mb-2">Xiaosen Chen <span class="lang-zh text-2xl text-slate-500">(陈潇森)</span></h1>
+            <p class="text-xl text-slate-600 mb-4 lang-en">Video Recommendation Strategy Algorithm Engineer</p>
+            <p class="text-xl text-slate-600 mb-4 lang-zh">视频推荐策略算法工程师</p>
+            
             <div class="flex flex-wrap gap-4 text-sm text-slate-500">
-                <a href="mailto:hesorchen@gmail.com" class="hover:text-blue-600">hesorchen@gmail.com</a>
-                <a href="https://github.com/hesorchen" class="hover:text-blue-600">GitHub</a>
-                <span>Beijing, China</span>
+                <a href="mailto:hesorchen@gmail.com" class="hover:underline">hesorchen@gmail.com</a>
+                <a href="https://github.com/hesorchen" class="hover:underline" target="_blank text-blue-600">GitHub</a>
+                <span class="lang-en">Beijing, China</span>
+                <span class="lang-zh">中国 · 北京</span>
             </div>
         </header>
 
         <section class="mb-10">
-            <h2 class="text-lg font-bold uppercase tracking-wider text-slate-400 mb-4">Experience</h2>
-            <div class="mb-6">
+            <h2 class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4 lang-en">Professional Summary</h2>
+            <h2 class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4 lang-zh">个人总结</h2>
+            <p class="lang-en text-lg">2+ years of experience in Recommendation Systems at Baidu. Focused on strategy optimization and LLM applications (SFT/DPO). Passionate about personal productivity and global finance.</p>
+            <p class="lang-zh text-lg">两年以上百度视频推荐系统经验，专注于策略优化与大模型（LLM）应用落地。热衷于个人生产力系统构建与全球化投资研究。</p>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4 lang-en">Work Experience</h2>
+            <h2 class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4 lang-zh">工作经历</h2>
+            
+            <div class="mb-8">
                 <div class="flex justify-between items-baseline">
                     <h3 class="text-xl font-bold">Baidu</h3>
-                    <span class="text-slate-500">2024.07 - Present</span>
+                    <span class="text-slate-500 text-sm">2024.07 - Present</span>
                 </div>
-                <p class="text-slate-600 italic">Algorithm Engineer (T4)</p>
-                <ul class="list-disc ml-5 mt-2 space-y-1">
-                    <li>Focusing on video recommendation strategy and LLM applications.</li>
-                    <li>Expertise in Linux workflow, Python, and model training (SFT/DPO).</li>
+                <p class="text-slate-600 italic mb-2 lang-en">Algorithm Engineer (Video Feed Strategy)</p>
+                <p class="text-slate-600 italic mb-2 lang-zh">算法工程师（视频 Feed 流策略）</p>
+                
+                <ul class="list-disc ml-5 space-y-2 text-slate-700">
+                    <li class="lang-en text-sm text-gray-700">Optimizing core metrics for video distribution via strategy iteration.</li>
+                    <li class="lang-zh text-sm text-gray-700">负责视频分发核心指标优化，推动从策略驱动向模型中心化转型。</li>
+                    <li class="lang-en text-sm text-gray-700">Explored LLM integration in recommendation workflows.</li>
+                    <li class="lang-zh text-sm text-gray-700">探索大模型在推荐流中的实际落地。</li>
                 </ul>
             </div>
         </section>
 
         <section class="mb-10">
-            <h2 class="text-lg font-bold uppercase tracking-wider text-slate-400 mb-4">Education</h2>
+            <h2 class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4 lang-en">Education</h2>
+            <h2 class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4 lang-zh">教育背景</h2>
             <div class="flex justify-between items-baseline">
-                <h3 class="text-xl font-bold">Nanyang Institute of Technology</h3>
-                <span class="text-slate-500">2019 - 2023</span>
+                <h3 class="text-xl font-bold lang-en text-black">Nanyang Institute of Technology</h3>
+                <h3 class="text-xl font-bold lang-zh text-black">南阳理工学院</h3>
+                <span class="text-slate-500 text-sm text-gray-700">2019 - 2023</span>
             </div>
-            <p class="text-slate-600">B.S. in Computer Science</p>
+            <p class="text-slate-600 lang-en text-sm text-gray-700">Bachelor in Computer Science</p>
+            <p class="text-slate-600 lang-zh text-sm text-gray-700">计算机科学与技术 (本科)</p>
         </section>
 
-        <footer class="mt-20 pt-8 border-t text-slate-400 text-sm text-center">
-            &copy; 2026 Xiaosen Chen. This site is separate from my <a href="https://hesorchen.github.io" class="underline">personal blog</a>.
+        <section class="mb-10">
+            <h2 class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4 lang-en">Skills & Interests</h2>
+            <h2 class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4 lang-zh">技能与兴趣</h2>
+            <div class="flex flex-wrap gap-2 text-sm text-gray-600">
+                <span class="px-3 py-1 bg-slate-100 rounded border">Python / C++</span>
+                <span class="px-3 py-1 bg-slate-100 rounded border">LLM (SFT/PPO/DPO)</span>
+                <span class="px-3 py-1 bg-slate-100 rounded border">Personal Productivity (Obsidian/Heptabase)</span>
+                <span class="px-3 py-1 bg-slate-100 rounded border">Global Investing (IBKR)</span>
+            </div>
+        </section>
+
+        <footer class="mt-20 pt-8 border-t text-slate-400 text-xs text-center">
+            &copy; 2026 Xiaosen Chen. Built with Tailwind CSS.
         </footer>
     </div>
+
+    <script>
+        function toggleLang() {
+            const zhElements = document.querySelectorAll('.lang-zh');
+            const enElements = document.querySelectorAll('.lang-en');
+            const isEnglish = zhElements[0].style.display === 'none' || zhElements[0].style.display === '';
+
+            if (isEnglish) {
+                zhElements.forEach(el => el.style.display = 'inline-block');
+                enElements.forEach(el => el.style.display = 'none');
+            } else {
+                zhElements.forEach(el => el.style.display = 'none');
+                enElements.forEach(el => el.style.display = 'inline-block');
+            }
+        }
+    </script>
 </body>
 </html>
